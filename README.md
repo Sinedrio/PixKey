@@ -136,20 +136,29 @@ Para executar testes integrados, use o comando:
 - `firstName` (opcional)
 - `lastName` (opcional)
 
-## Design e Padrões
-
-### SOLID
-
-- **Single Responsibility Principle (SRP)**: Cada classe tem uma única responsabilidade.
-- **Open/Closed Principle (OCP)**: As classes são abertas para extensão e fechadas para modificação.
-- **Liskov Substitution Principle (LSP)**: As subclasses podem substituir as superclasses sem alterar a funcionalidade esperada.
-- **Interface Segregation Principle (ISP)**: As interfaces são específicas para o cliente.
-- **Dependency Inversion Principle (DIP)**: As classes dependem de abstrações e não de implementações concretas.
-
-### Design Patterns
-
-- **Factory Method**: Usado para criar instâncias de validação de chaves Pix.
-- **Strategy Pattern**: Aplicado para escolher o algoritmo de validação de chave Pix com base no tipo de chave.
+## Design Patterns
+- Repository Pattern
+- Service Layer Pattern
+## Solid
+- Single Responsibility Principle (SRP)
+ PixKey Class: Deve representar apenas os dados da chave Pix. A validação e a lógica de negócios devem estar em classes separadas.
+ PixKeyService: Deve conter apenas a lógica de negócios relacionada à chave Pix. Qualquer lógica de validação deve estar em classes ou serviços separados.
+ PixKeyValidator: Cada validador (e-mail, CPF, CNPJ, etc.) deve ter sua própria classe responsável apenas pela validação do tipo específico de chave.
+## 12 factor-apps
+- Código Base (Codebase):
+Prática: Sua aplicação parece seguir o princípio de uma única codebase para um único repositório. Isso facilita o versionamento e o gerenciamento do código.
+- Dependências (Dependencies):
+Prática: A aplicação declara suas dependências explicitamente (por exemplo, no build.gradle para Java). O uso de ferramentas como Gradle para gerenciar dependências é uma boa prática conforme o 12-Factor.
+- Configuração (Configuration):
+Prática: As configurações da aplicação são extraídas do código-fonte e mantidas em variáveis de ambiente, conforme indicado pelo uso do Spring Boot com profiles e propriedades externas.
+- Backends de Serviços (Backing Services):
+Prática: A aplicação se conecta a serviços externos, como MongoDB, para persistência de dados, o que está alinhado com a prática de tratar serviços externos como recursos plugáveis.
+- Build, Release, Run (Build, Release, Run):
+Prática: A aplicação segue o ciclo de build (compilação), release (implantação) e run (execução), conforme o fluxo típico de aplicações Java e o uso de ferramentas como Gradle para construção e execução.
+- Logs (Logs):
+Prática: O uso de frameworks como SLF4J e Logback para logging é compatível com o tratamento de logs como streams de eventos. Embora não esteja explicitamente mencionado, o logging é uma prática comum em aplicações Spring Boot.
+- Port Binding (Port Binding):
+Prática Recomendada: A aplicação deve escutar em uma porta definida através de variáveis de ambiente. O Spring Boot, por padrão, escuta na porta 8080, mas você pode configurar isso para torná-lo mais flexível.
 
 ## Considerações
 
