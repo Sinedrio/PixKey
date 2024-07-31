@@ -73,7 +73,7 @@ Os testes unitários podem ser executados com:
 
 ### Criação de Chave Pix
 
-**POST** `/api/pix-keys`
+**POST** `/api/pix-keys-v1`
 
 **Body**:
 
@@ -91,7 +91,7 @@ Os testes unitários podem ser executados com:
 
 ### Atualização de Chave Pix
 
-**PUT** `/api/pix-keys/{id}`
+**PUT** `/api/pix-keys-v1/update/{id}`
 
 **Body**:
 
@@ -109,15 +109,15 @@ Os testes unitários podem ser executados com:
 
 ### Deleção de Chave Pix
 
-**DELETE** `/api/pix-keys/{id}`
+**DELETE** `/api/pix-keys-v1/delete/{id}`
 
 ### Consulta de Chave Pix por ID
 
-**GET** `/api/pix-keys/{id}`
+**GET** `/api/pix-keys-v1/{id}`
 
 ### Consulta de Chave Pix por Filtros
 
-**GET** `/api/pix-keys`
+**GET** `/api/pix-keys-v1/{params}`
 
 **Params**:
 
