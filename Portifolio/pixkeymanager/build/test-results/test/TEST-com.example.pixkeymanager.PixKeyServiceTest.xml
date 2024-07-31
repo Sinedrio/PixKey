@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.pixkeymanager.PixKeyServiceTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2024-07-31T18:17:06" hostname="ni-66191-5p" time="1.196">
+  <properties/>
+  <testcase name="testInactivatePixKey()" classname="com.example.pixkeymanager.PixKeyServiceTest" time="1.085"/>
+  <testcase name="testFindByKeyType()" classname="com.example.pixkeymanager.PixKeyServiceTest" time="0.007"/>
+  <testcase name="testCreatePixKey()" classname="com.example.pixkeymanager.PixKeyServiceTest" time="0.011"/>
+  <testcase name="testCreatePixKey_LimitExceeded()" classname="com.example.pixkeymanager.PixKeyServiceTest" time="0.013"/>
+  <testcase name="testCreatePixKey_InvalidRandomKey()" classname="com.example.pixkeymanager.PixKeyServiceTest" time="0.007"/>
+  <testcase name="testUpdatePixKey_Inactivated()" classname="com.example.pixkeymanager.PixKeyServiceTest" time="0.005"/>
+  <testcase name="testCreatePixKey_InvalidKeyType()" classname="com.example.pixkeymanager.PixKeyServiceTest" time="0.005"/>
+  <testcase name="testCreatePixKey_InvalidCnpj()" classname="com.example.pixkeymanager.PixKeyServiceTest" time="0.004"/>
+  <testcase name="testUpdatePixKey_NotFound()" classname="com.example.pixkeymanager.PixKeyServiceTest" time="0.005"/>
+  <testcase name="testInactivatePixKey_AlreadyInactivated()" classname="com.example.pixkeymanager.PixKeyServiceTest" time="0.005"/>
+  <testcase name="testUpdatePixKey()" classname="com.example.pixkeymanager.PixKeyServiceTest" time="0.004"/>
+  <testcase name="testFindById()" classname="com.example.pixkeymanager.PixKeyServiceTest" time="0.004"/>
+  <testcase name="testCreatePixKey_InvalidCpf()" classname="com.example.pixkeymanager.PixKeyServiceTest" time="0.004"/>
+  <testcase name="testCreatePixKey_KeyAlreadyExists()" classname="com.example.pixkeymanager.PixKeyServiceTest" time="0.004"/>
+  <testcase name="testFindByAgencyNumberAndAccountNumber()" classname="com.example.pixkeymanager.PixKeyServiceTest" time="0.004"/>
+  <testcase name="testInactivatePixKey_NotFound()" classname="com.example.pixkeymanager.PixKeyServiceTest" time="0.005"/>
+  <system-out><![CDATA[15:17:07.454 [Test worker] INFO com.example.pixkeymanager.service.PixKeyService -- Limite de chaves por conta excedido
+15:17:07.468 [Test worker] INFO com.example.pixkeymanager.service.PixKeyService -- Chave aleatória gerada
+15:17:07.476 [Test worker] INFO com.example.pixkeymanager.service.PixKeyService -- Não é permitido alterar chaves inativadas
+15:17:07.493 [Test worker] INFO com.example.pixkeymanager.service.PixKeyService -- Chave pix não encontrada
+15:17:07.499 [Test worker] INFO com.example.pixkeymanager.service.PixKeyService -- A chave Pix ja foi deletada.
+15:17:07.519 [Test worker] INFO com.example.pixkeymanager.service.PixKeyService -- Chave já existe
+15:17:07.530 [Test worker] INFO com.example.pixkeymanager.service.PixKeyService -- Chave Pix não encontrada.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

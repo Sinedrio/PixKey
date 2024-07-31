@@ -1,0 +1,8 @@
+w15:17:07.454 [Test worker] INFO com.example.pixkeymanager.service.PixKeyService -- Limite de chaves por conta excedido
+k15:17:07.468 [Test worker] INFO com.example.pixkeymanager.service.PixKeyService -- Chave aleatória gerada
+15:17:07.476 [Test worker] INFO com.example.pixkeymanager.service.PixKeyService -- Não é permitido alterar chaves inativadas
+
+m15:17:07.493 [Test worker] INFO com.example.pixkeymanager.service.PixKeyService -- Chave pix não encontrada
+p15:17:07.499 [Test worker] INFO com.example.pixkeymanager.service.PixKeyService -- A chave Pix ja foi deletada.
+d15:17:07.519 [Test worker] INFO com.example.pixkeymanager.service.PixKeyService -- Chave já existe
+n15:17:07.530 [Test worker] INFO com.example.pixkeymanager.service.PixKeyService -- Chave Pix não encontrada.
