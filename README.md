@@ -146,7 +146,7 @@ Para executar testes integrados, use o comando:
  PixKeyValidator: Cada validador (e-mail, CPF, CNPJ, etc.) deve ter sua própria classe responsável apenas pela validação do tipo específico de chave.
 ## 12 factor-apps
 - Código Base (Codebase):
-Prática: Sua aplicação parece seguir o princípio de uma única codebase para um único repositório. Isso facilita o versionamento e o gerenciamento do código.
+Prática: O princípio de uma única codebase para um único repositório. Isso facilita o versionamento e o gerenciamento do código.
 - Dependências (Dependencies):
 Prática: A aplicação declara suas dependências explicitamente (por exemplo, no build.gradle para Java). O uso de ferramentas como Gradle para gerenciar dependências é uma boa prática conforme o 12-Factor.
 - Configuração (Configuration):
@@ -156,14 +156,10 @@ Prática: A aplicação se conecta a serviços externos, como MongoDB, para pers
 - Build, Release, Run (Build, Release, Run):
 Prática: A aplicação segue o ciclo de build (compilação), release (implantação) e run (execução), conforme o fluxo típico de aplicações Java e o uso de ferramentas como Gradle para construção e execução.
 - Logs (Logs):
-Prática: O uso de frameworks como SLF4J e Logback para logging é compatível com o tratamento de logs como streams de eventos. Embora não esteja explicitamente mencionado, o logging é uma prática comum em aplicações Spring Boot.
+Prática: O uso de frameworks como SLF4J e Logback para logging é compatível com o tratamento de logs como streams de eventos.
 - Port Binding (Port Binding):
-Prática Recomendada: A aplicação deve escutar em uma porta definida através de variáveis de ambiente. O Spring Boot, por padrão, escuta na porta 8080, mas você pode configurar isso para torná-lo mais flexível.
+Prática: A aplicação deve escutar em uma porta definida através de variáveis de ambiente via application.yml.
 
 ## Considerações
 
 Para contribuir com o projeto, por favor, siga as diretrizes de contribuição e crie um pull request. Para mais detalhes, consulte a [documentação](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/) do Spring Boot.
-
----
-
-Esse README cobre as principais seções para documentar seu projeto e orientar outros desenvolvedores a utilizar e contribuir com sua aplicação. Se houver mais informações específicas sobre sua aplicação, sinta-se à vontade para adicionar mais detalhes.
