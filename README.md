@@ -69,15 +69,6 @@ Os testes unitários podem ser executados com:
 ```bash
 ./gradlew test
 ```
-
-### Testes Integrados
-
-Para executar testes integrados, use o comando:
-
-```bash
-./gradlew integrationTest
-```
-
 ## Endpoints da API
 
 ### Criação de Chave Pix
